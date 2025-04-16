@@ -1,0 +1,15 @@
+body {
+  border: solid 1px red;
+  max-width: 1000px;
+  margin: 80px auto;
+  min-height: calc(100vh - 160px);
+}
+
+form {
+  width: 80%;
+}
+
+form > div {
+  border: solid 1px blue;
+  display: inline-block;
+}
