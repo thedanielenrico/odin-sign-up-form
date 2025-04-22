@@ -58,6 +58,21 @@ form {
   margin-top: 24px;
 }
 
-form > div {
-  border: solid 1px blue;
+#form-user-inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 22px;
+  padding: 24px 0;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+input {
+  border: 1px solid lightskyblue;
+  border-radius: 4px;
 }
