@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("./assets/fonts/Norse-Bold.otf") format("opentype");
+}
+
 body {
   border: solid 1px red;
   max-width: 1000px;
