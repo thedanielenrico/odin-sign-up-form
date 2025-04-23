@@ -32,9 +32,10 @@
         </h3>
         <form action="" method="post">
           <div id="form-user-inputs">
+            <h4>Let's do this!</h4>
             <label for="firstName">
-              first name
-              <input type="text" id="firstName" name="firstName" />
+              first name *
+              <input type="text" id="firstName" name="firstName" required />
             </label>
 
             <label for="lastName">
@@ -43,8 +44,8 @@
             </label>
 
             <label for="email">
-              Email
-              <input type="email" id="email" name="email" />
+              Email *
+              <input type="email" id="email" name="email" required />
             </label>
 
             <label for="phoneNumber">
@@ -53,20 +54,23 @@
             </label>
 
             <label for="password">
-              password
-              <input type="text" id="password" name="password" />
+              password *
+              <input type="text" id="password" name="password" required />
             </label>
 
             <label for="confirmPassword">
-              confirm password
-              <input type="text" id="confirmPassword" name="confirmPassword" />
+              confirm password *
+              <input
+                type="text"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+              />
             </label>
           </div>
           <button type="submit" id="submit-btn">Create Account</button>
         </form>
-        <div>
-          <p>Already have an account? <a href="#">Log in</a></p>
-        </div>
+        <p id="login-para">Already have an account? <a href="#">Log in</a></p>
       </section>
     </main>
   </body>
