@@ -5,10 +5,12 @@
 
 :root {
   font-family: sans-serif;
+  --error-color: #cc0000;
+  --border-standard-color: lightskyblue;
 }
 
 body {
-  border: solid 1px lightblue;
+  border: solid 1px var(--border-standard-color);
   max-width: 1000px;
   margin: 80px auto;
 }
@@ -85,7 +87,7 @@ label {
 }
 
 input {
-  border: 1px solid lightskyblue;
+  border: 1px solid var(--border-standard-color);
   border-radius: 4px;
   outline: none;
   -webkit-transition-duration: 0.3s;
@@ -94,6 +96,10 @@ input {
   transition-property: box-shadow, border-color;
   height: 24px;
   font-size: initial !important;
+}
+
+input:user-invalid {
+  border-color: var(--error-color);
 }
 
 input:focus,
