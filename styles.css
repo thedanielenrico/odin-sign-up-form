@@ -10,13 +10,14 @@
 }
 
 body {
-  border: solid 1px var(--border-standard-color);
   max-width: 1000px;
   margin: 80px auto;
 }
 
 #sign-up-main {
   display: flex;
+  border: solid 4px var(--border-standard-color);
+  border-radius: 12px;
 }
 
 #right-panel {
@@ -50,10 +51,6 @@ h3 {
   font-size: 12px;
 }
 
-#form-container {
-  border: 1px solid black;
-}
-
 form {
   margin-bottom: 24px;
 }
@@ -67,9 +64,9 @@ form {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 22px;
-  border: 1px solid black;
   border-left: none;
   border-right: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   h4 {
     width: 100%;
   }
