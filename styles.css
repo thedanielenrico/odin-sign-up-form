@@ -18,6 +18,7 @@ body {
   display: flex;
   border: solid 4px var(--border-standard-color);
   border-radius: 12px;
+  overflow: hidden;
 }
 
 #right-panel {
