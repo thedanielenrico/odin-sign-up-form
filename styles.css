@@ -96,7 +96,9 @@ input {
   font-size: initial !important;
 }
 
-input:user-invalid {
+input:user-invalid,
+input:focus:user-invalid,
+input:active:user-invalid {
   border-color: var(--error-color);
 }
 
