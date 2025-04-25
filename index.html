@@ -30,12 +30,18 @@
             you want to.
           </span>
         </h3>
-        <form action="" method="post">
+        <form id="userinfo">
           <div id="form-user-inputs">
             <h4>Let's do this!</h4>
             <label for="firstName">
               first name *
-              <input type="text" id="firstName" name="firstName" required />
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                required
+                novalidate="true"
+              />
             </label>
             <label for="lastName">
               last name
@@ -44,7 +50,13 @@
 
             <label for="email">
               Email *
-              <input type="email" id="email" name="email" required />
+              <input
+                required
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="username"
+              />
             </label>
 
             <label for="phoneNumber">
@@ -54,16 +66,23 @@
 
             <label for="password">
               password *
-              <input type="text" id="password" name="password" required />
+              <input
+                required
+                type="password"
+                id="password"
+                name="password"
+                autocomplete="new-password"
+              />
             </label>
 
             <label for="confirmPassword">
               confirm password *
               <input
-                type="text"
+                required
+                type="password"
                 id="confirmPassword"
                 name="confirmPassword"
-                required
+                autocomplete="new-password"
               />
             </label>
           </div>
@@ -73,4 +92,5 @@
       </section>
     </main>
   </body>
+  <script src="index.js"></script>
 </html>
