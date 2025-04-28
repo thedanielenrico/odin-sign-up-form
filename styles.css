@@ -50,13 +50,18 @@ h3 {
 
 #logo-container {
   height: 120px;
-  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
   p,
   img {
-    display: inline;
+    display: inline-block;
   }
   p {
     font-size: 100px;
+    font-family: "Norse Bold";
+    color: white;
+    vertical-align: top;
   }
 }
 
